@@ -15,8 +15,8 @@ class CreateBankSettingTable extends Migration
     {
         Schema::create('bank_setting', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('bank_id');
-            $table->bigInteger('setting_id');
+            $table->unsignedBigInteger('bank_id');
+            $table->unsignedBigInteger('setting_id');
             $table->string('account');
             $table->string('name');
             $table->timestamps();

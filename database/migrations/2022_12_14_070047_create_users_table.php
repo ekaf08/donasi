@@ -26,7 +26,7 @@ class CreateUsersTable extends Migration
             $table->text('address')->nullable();
             $table->text('about')->nullable();
             $table->text('path_image')->nullable();
-            $table->bigInteger('role_id'); //relasi dengan table roles
+            $table->unsignedBigInteger('role_id'); //relasi dengan table roles
             $table->rememberToken();
             $table->timestamps();
         });
